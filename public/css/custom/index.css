@@ -1,0 +1,75 @@
+/* MAIN LOGO HEADER */
+
+.headerDiv {
+    height:min-content !important; padding-top:50px;
+}
+
+.mainLogoH { height:300px; width:auto; margin-bottom:15px; }
+
+.headerText {
+    margin-top:8rem !important; margin-bottom:45px !important;
+    color:#567276 !important;
+}
+
+.hiddenOnMobile {
+    color:white;
+}
+
+.headerBtns1:hover .hiddenOnMobile {
+    color:#577377;
+}
+
+.cd-schedule__group {
+    margin:5px !important;
+}
+
+.btns {
+    margin-bottom:40px !important;
+}
+
+@media screen and (max-width:570px) {
+    .mainLogoH {
+        height:110px; width:auto;
+    }
+
+    .mainDescrH {
+        font-size:13px;
+    }
+
+    .hiddenOnMobile {
+        display:none;
+    }
+
+    .shownOnMobile {
+        display:block !important;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .headerText {
+        font-size:1.2rem !important; letter-spacing:0.5rem !important;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .headerBtns1 {
+        padding:20px !important;
+        width:40% !important
+    }
+
+    .headerBtns2 {
+        padding:20px !important;
+        width:40% !important
+    }
+}
+
+@media screen and (max-width:991px) {
+    .headerText {
+        margin-top:0 !important; margin-bottom:20px !important;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .mainLogoH { height:150px; width:auto; margin-bottom:15px; }
+}

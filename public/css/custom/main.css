@@ -1,0 +1,192 @@
+@media screen and (max-width:1091px) {
+    .navbar-brand img {
+        height:70px !important;
+    }
+}
+
+/********** YOGA & THERAPIES ICONS **********/
+
+
+
+.topSpacement {
+    height:105px;
+}
+
+#section-counter {
+    height:500px;
+}
+
+.bottomSpaceCalend {
+    height:170px !important;
+}
+
+@media screen and (max-width:991px) {
+    .topSpacement {
+        height:0 !important;
+    }
+}
+
+@media screen and (max-width:921px) {
+    .bottomSpaceCalend {
+        height:0 !important;
+    }
+}
+
+@media screen and (max-width:1875px) {
+    .hero-wrap .blurContainer {
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        width:100%; height:100%;
+    }
+
+    .hero-wrap {
+        background-position:bottom;
+    }
+
+    .headerText {
+        font-size:22px !important;
+    }
+}
+
+.blur-container {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-image:url(images/bg_3.jpg);
+}
+
+.noBottomSpacement {
+    padding-bottom:0 !important;
+    padding-top:0 !important;
+}
+
+.photoGallery {
+    margin-bottom:10px;
+}
+
+/* CONTACT PAGE */
+
+@media screen and (max-width:1290px) {
+    .planDiv1 {
+        display:none !important;
+    }
+}
+
+@media screen and (min-width:1290px) {
+    .planDiv2 {
+        display:none !important;
+        overflow:hidden;
+    }
+}
+
+.planImg {
+    width:600px; margin:auto; text-align:center; height:450px !important;
+}
+
+.planIFrame {
+    width:600px; margin-left:auto !important; margin-right:auto !important;
+}
+
+@media screen and (max-width:615px) {
+    .planImg {
+        width:100%; margin:auto; text-align:center; height:auto;
+    }
+
+    .planIFrame {
+        width:100% !important; margin-left:auto !important; margin-right:auto !important;
+    }
+}
+
+/* SCROLLBAR */
+
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: #ffffff;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 1px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #00000080;
+}
+
+/********** FOOTER **********/
+
+@media screen and (max-width:766px) {
+    .footerSection {
+        text-align:center;
+        width:50%;
+        margin:auto !important;
+    }
+}
+
+@media screen and (max-width:635px) {
+    .footerSection {
+        width:95%;
+    }
+}
+
+/********** COOKIE BANNER **********/
+
+.cookieBanner {
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    background-color:rgba(38, 38, 38,0.95);
+    color:white;
+    font-size:14px;
+    width:100%;
+    height:50px;
+    z-index:600;
+}
+
+.cookieBannerVisible {
+    visibility:visible;
+    opacity:1;
+    transition: visibility 1s, opacity 1s linear;
+}
+
+.cookieBannerHidden {
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 1s, opacity 1s linear;
+}
+
+.cookieBanner p {
+    line-height:50px;
+}
+
+.cookieBanner #closeCookies:hover {
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+}
+
+@media screen and (max-width:700px) {
+    .cookieBanner {
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .cookieBanner {
+        font-size:11px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .cookieBanner {
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .cookieBanner {
+        display:none;
+    }
+}
