@@ -46,6 +46,9 @@ Route::get('therapies', [App\Http\Controllers\TherapieController::class, 'index'
 Route::get('therapies/{el}', [App\Http\Controllers\TherapieController::class, 'show'])->name('therapies.show');
 Route::post('therpies/avis/{el}/{discipline}', [App\Http\Controllers\TherapieController::class, 'avis'])->name('therapies.avis');
 
+Route::get('formations', [App\Http\Controllers\FormationController::class, 'index'])->name('formations');
+Route::get('formations/{el}', [App\Http\Controllers\FormationController::class, 'show'])->name('formations.show');
+
 /*
 |--------------------------------------------------------------------------
 | Back-end Web Routes

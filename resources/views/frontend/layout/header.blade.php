@@ -9,6 +9,7 @@
                 <li class="nav-item home"><a href="/" class="nav-link @if(Session::get('lien') == '/home') active @endif">Accueil</a></li>
                 <li class="nav-item yoga"><a href="/yogas#reservation" class="nav-link @if(Session::get('lien') == '/yogas') active @endif">Yoga</a></li>
                 <li class="nav-item therapies"><a href="/therapies" class="nav-link @if(Session::get('lien') == '/therapies') active @endif">Thérapies</a></li>
+                <li class="nav-item therapies"><a href="/formations" class="nav-link @if(Session::get('lien') == '/formations') active @endif">Formations</a></li>
                 <li class="nav-item ateliers"><a href="/ateliers" class="nav-link @if(Session::get('lien') == '/ateliers') active @endif">Ateliers</a></li>
                 <li class="nav-item temoignages"><a href="/temoignages" class="nav-link @if(Session::get('lien') == '/temoignages') active @endif">Témoignages</a></li>
                 {{--

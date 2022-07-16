@@ -10,12 +10,14 @@
             </div>
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Thérapies douces</h2>
-                    <ul class="list-unstyled">
-                        @foreach(\App\Models\Therapie::all() as $therapie)
-                            <li><a href="/therapies/{{ $therapie->id }}">{{ $therapie->intitule }}</a></li>
-                        @endforeach
-                    </ul>
+                    @foreach(\App\Models\TherapieCategorie::all()->shuffle() as $categorie)
+                        <h2 class="ftco-heading-2 my-0 py-0">{{ $categorie->title }}</h2>
+                        <ul class="list-unstyled my-0 py-0">
+                            @foreach($categorie->therapies as $therapie)
+                                <li class="ml-2"><a href="/therapies/{{ $therapie->id }}">{{ $therapie->intitule }}</a></li>
+                            @endforeach
+                        </ul>
+                    @endforeach
                 </div>
             </div>
             <div class="col-md">

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEntiteTags extends Migration
+class CreateFormationDateElementsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateEntiteTags extends Migration
      */
     public function up()
     {
-        Schema::create('entite_tags', function (Blueprint $table) {
+        Schema::create('formation_date_elements', function (Blueprint $table) {
             $table->id();
-            $table->integer('entite_id');
-            $table->integer('tag_id');
-            $table->string('entite');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateEntiteTags extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('entite_tags');
+        Schema::dropIfExists('formation_date_elements');
     }
 }

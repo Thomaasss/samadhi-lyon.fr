@@ -39,7 +39,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             @if($yoga->image)
-                                @if(str_contains($therapie->image, '/white.png'))
+                                @if(str_contains($yoga->image, '/white.png'))
                                     <p style="background-color:#dfe8ea; border-radius:10%" class="text-center text-xxxl">
                                         <span class="{{ $yoga->icone->intitule }}" style="color:#597579; width:100%; font-size:1.3em;"></span>
                                     </p>
