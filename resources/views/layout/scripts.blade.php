@@ -30,11 +30,21 @@
 
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
-    /*if (!('hasCodeRunBefore' in localStorage)) {
-        alertify.alert('Nous sommes navré !', "Dans le cadre du dispositif de lutte contre la COVID, un arrêté préféctoral nous oblige à suspendre tous les cours jusqu'à nouvel ordre. <br/><br/>Nous prions nos élèves de croire que tout est mis en oeuvre pour reprendre, en toute sécurité, dès que possible la continuité de nos cours. <br/><br/>Les thérapeutes sont en revanche toujours disponibles. Vous pouvez aussi nous contacter pour réaliser des cours en ligne !");
-        localStorage.hasCodeRunBefore = true;
-    }*/
+    if (!('hasCodeRunBefore1' in localStorage)) {
+        Swal.fire({
+            imageUrl: '/images/portes_ouvertes.png',
+            //imageHeight: 1500,
+            imageAlt: 'A tall image',
+            footer: '<a href="/images/JOURNEES PORTEOUVERTE 2022.pdf">Ouvrir le PDF</a>',
+            confirmButtonText:
+                '<i class="fa fa-times"></i> Fermer',
+        })
+        //alertify.alert('Journées portes ouvertes !', "<h3>Les 3-4 septembre 2022</h3> <img src='/bg_1.jpg' alt='' style='width:200px; height:auto;'> <br> de 9h à 18h <br> 27 rue Sainte Barbe <br> 69110 Sainte-Foy-Les-Lyon <br> <br> • Initiations Yoga-Pilates <br> • Thérapies naturelles <br> • Beauté ancestrale <br> • Activités enfants <br> • Créateurs éco-responsables");
+        localStorage.hasCodeRunBefore1 = true;
+    }
     if (location.hash) {
         $("a[href='" + location.hash + "']").tab("show");
     }

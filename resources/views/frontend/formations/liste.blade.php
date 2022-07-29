@@ -8,7 +8,7 @@
     <div class="row align-items-center">
         <div class="col-lg-8 container-fluid">
             <div class="row no-gutters mx-auto d-flex justify-content-center">
-                @foreach($formations as $formation)
+                @foreach(\App\Models\Formation::all()->shuffle() as $formation)
                     <div
                         data-tippy-content="Par {{ $formation->formateur ? $formation->formateur->nom : '' }}"
                         class="d-flex align-items-stretch description"

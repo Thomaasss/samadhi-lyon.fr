@@ -132,7 +132,7 @@
                 </div> <!-- .col-md-8 -->
                 <div class="col-lg-4 sidebar ftco-animate">
                     <div class="sidebar-box ftco-animate">
-                        <h3 class="heading-2">Autres thérapies</h3>
+                        <h3 class="heading-2">Autres formations</h3>
                         @foreach(App\Models\formation::where('id', '<>', $formation->id)->get()->shuffle()->take('6') as $formationList)
                             <div class="block-21 mb-4 d-flex">
                                 <a

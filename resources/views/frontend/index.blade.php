@@ -63,7 +63,8 @@
                     <div class="img" style="background-image: url(images/yoga5.jpg);"></div>
                     <div class="text mt-4">
                         <h3 class="mb-4">Ateliers &amp; Evénements</h3>
-                        <p class="mb-5">Participez et conviez votre famille à des événements et ateliers lucratifs et ressourcant. Planning des ateliers disponible ci-dessous</p>
+                        <p>Participez et conviez votre famille à des événements et ateliers lucratifs et ressourcant. Planning des ateliers disponible ci-dessous</p>
+                        <p class="mb-3"><a href="/images/JOURNEES PORTEOUVERTE 2022.pdf">➡️ Portes ouvertes Samādhi 🎉</a></p>
                         <p><a href="/ateliers" class="btn btn-white px-4 py-3"> Participer &nbsp<span class="ion-ios-arrow-round-forward"></span></a></p>
                     </div>
                 </div>
@@ -91,5 +92,10 @@
 <section class="ftco-section py-5" id="section1">
     @include('frontend.therapies.liste')
     <p class=" ftco-animate" style="text-align:center; margin-top:50px;"><a href="/therapies">Consulter les tarifs</a></p>
+</section>
+
+<section class="ftco-section py-5" id="section1">
+    @include('frontend.formations.liste')
+    <p class=" ftco-animate" style="text-align:center; margin-top:50px;"><a href="/formations">Consulter le planning et les tarifs</a></p>
 </section>
 @endsection
